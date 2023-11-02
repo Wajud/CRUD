@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Shopping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uuid@3.4.0/dist/umd/uuidv4.min.js"></script>
+  </head>
+  <body class="">
+    <div class="absolute top-0 left-0 w-full h-full">
+      <img src="images/supermarket.jpg" alt="" class="w-full h-full" />
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.6)] z-20"
+      ></div>
+    </div>
+    <section
+      class="shadow-lg rounded-sm max-w-lg mx-auto relative z-40 bg-white"
+    >
+      <div class="todo rounded-lg shadow-lg p-6 max-w-lg mx-auto my-20">
+        <h2
+          class="text-2xl font-semibold mb-4 text-green-800 flex items-center"
+        >
+          Grocery List
+          <img
+            src="/images/groceryshopping.jpg"
+            alt="groceryshopping"
+            class="w-14 ml-4 rounded-md"
+          />
+        </h2>
+        <div
+          class="input-button flex items-center justify-between gap-4 rounded-full py-5 mb-4"
+        >
+          <input
+            type="text"
+            id="grocery-input"
+            class="flex-1 px-3 py-2 bg-transparent border border-gray-200 rounded-full outline-none focus:bg-white focus:border-2"
+            placeholder="What will you like to buy ?"
+          />
+          <button
+            onclick="addGrocery()"
+            class="bg-green-600 text-white px-4 py-2 rounded-full"
+          >
+            Add Item
+          </button>
+        </div>
+        <span class="hidden" id="errorMessage"></span>
+        <ul id="grocery-list" class="flex flex-col gap-6">
+          <!-- Tasks will be displayed here -->
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
