@@ -53,6 +53,27 @@
           </h1>
         </div>
       </div>
+
+      <form
+        id="update-item"
+        class="bg-blue-400 py-4 px-4 rounded-md flex gap-4 absolute -top-20 left-1/2 -translate-x-1/2 scale-0 transition-all"
+      >
+        <input type="text" class="py-1 px-4 rounded-md flex-1" />
+        <div class="flex gap-2">
+          <p
+            class="w-[90px] text-center font-semibold px-2 py-1 rounded-md bg-green-500 text-white cursor-pointer hover:bg-green-600"
+            id="save-edit-btn"
+            onclick="saveEdit()"
+          >
+            Save
+          </p>
+          <p
+            class="w-[90px] text-center font-semibold px-2 py-1 rounded-md bg-red-500 text-white cursor-pointer hover:bg-red-600"
+          >
+            Cancel
+          </p>
+        </div>
+      </form>
     </div>
   </body>
 </html>
